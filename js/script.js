@@ -79,7 +79,7 @@ var makeCard = function (product) {
     
     if (product.isLimited) {
       card.classList.add('good-limited');
-      price.setAttribute('old-price', (product.oldPrice.toFixed(2) + '\u0024'));
+      price.firstChild.setAttribute('old-price', (product.oldPrice.toFixed(2) + '\u0024'));
     }
 
     var container = makeCardElement('div', 'container');
