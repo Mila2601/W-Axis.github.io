@@ -241,8 +241,9 @@ div.container {
   }
     
   .popup-content {
-    position: relative;
+    position: sticky;
     margin-left: auto;
+    top: 0;
     right: 0;
     width: 470px;
     background-color: #ffffff;
