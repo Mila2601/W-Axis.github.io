@@ -76,7 +76,7 @@ body {
     padding: 10px;
     background-color: #e25b88;
     background-image: url("../images/illustration.png");
-    background-position: -200px 83px;
+    background-position: -200px 104px;
     color: white;
     text-transform: uppercase;
     padding-top: 17px;
@@ -148,8 +148,8 @@ h2 {
 
 .good-limited .price span::before {
     content: "OFFERTA LIMITATA -50%";
-    top: -38px;
-    left: 13px;
+    top: -37px;
+    left: 12px;
 }
 
 .good-limited .price span::after {
@@ -422,8 +422,8 @@ div.container {
 @media all and (min-width: 960px) {
     
     .mainSection h1 {
-        margin-top: 143px;
-        margin-bottom: 40px;
+        margin-top: 173px;
+        margin-bottom: 39px;
     }
 
     li.good {
