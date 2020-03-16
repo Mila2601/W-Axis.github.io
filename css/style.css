@@ -8,6 +8,11 @@
 }
 
 @font-face {
+    font-family: Evogria Regular;
+    src: url(../fonts/evogria-regular.otf); 
+}
+
+@font-face {
     font-family: Bebas Neue;
     src: url(../fonts/Bebas Neue.ttf); 
 }
@@ -60,7 +65,7 @@ ul.goods {
     padding: 0;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(277px, 289px));
+    grid-template-columns: repeat(auto-fit, 289px);
     grid-gap: 0px;
     list-style: none;
 }
@@ -71,12 +76,12 @@ li.good {
     flex-direction: column;
     align-items: center;
     margin-bottom: 35px;
-    background: url("../images/offerbg.png") no-repeat;
+    background: url("../images/offerbg.png") no-repeat 50% 100%;
     background-origin: border-box;
 }
   
 h1 {
-    font-family: 'Evogria', sans-serif;
+    font-family: 'Evogria Regular', 'Evogria', sans-serif;
     text-transform: uppercase;
     font-size: 48px;
     text-align: center;
@@ -96,14 +101,20 @@ h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
     text-transform: uppercase;
-    position: relative;
-    width: 180px;
-    top: -5px;
-    left: 20px;
+    width: 200px;
+    margin: 55px 0;
 }
 
-.good-limited .price::before,
-.good-limited .price::after {
+.price span {
+    display: block;
+    position: relative;
+    width: 200px;
+    padding-left: 30px;  
+    margin-bottom: 10px;  
+}
+
+.good-limited .price span::before,
+.good-limited .price span::after {
   position: absolute;
   z-index: 1;
   display: inline-block;
@@ -111,15 +122,15 @@ h2 {
   vertical-align: top;
 }
 
-.good-limited .price::before {
+.good-limited .price span::before {
     content: "OFFERTA LIMITATA -50%";
-    top: -38px;
-    left: -16px;
+    top: -37px;
+    left: -13px;
 }
 
-.good-limited .price::after {
+.good-limited .price span::after {
     content: attr(old-price);
-    left: 106px;
+    left: 136px;
     top: 8px;
     text-decoration: line-through;
 }
@@ -241,9 +252,8 @@ div.container {
   }
     
   .popup-content {
-    position: sticky;
+    position: relative;
     margin-left: auto;
-    top: 0;
     right: 0;
     width: 470px;
     background-color: #ffffff;
@@ -441,7 +451,7 @@ div.container {
     /* IE10 IE11 */
     p.price {
         width: 200px;
-        left: -10px;
+        text-align: left;
     }
 
     .dropdown {
@@ -451,11 +461,6 @@ div.container {
         scrollbar-highlight-color: transparent;
         scrollbar-face-color: transparent;
         scrollbar-arrow-color: transparent
-    }
-
-    .good-limited p.price::after,
-    .good-limited p.price::before {
-        left: -5px;
     }
 
     ul.dropdown{
@@ -468,6 +473,4 @@ div.container {
 
     li.good {
         display: inline-flex;
-        background-position: 100% 100%;
     }
- }
