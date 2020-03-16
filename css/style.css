@@ -467,5 +467,6 @@ div.container {
 
     li.good {
         display: inline-flex;
+        background-position: 100% 100%;
     }
  }
