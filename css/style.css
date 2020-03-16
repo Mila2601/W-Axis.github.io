@@ -118,7 +118,7 @@ h2 {
   position: absolute;
   z-index: 1;
   display: inline-block;
-  font-size: 18px;
+  font-size: 24px;
   vertical-align: top;
 }
 
@@ -397,11 +397,7 @@ div.container {
   /* Стили для ПК */
 
 @media all and (min-width: 960px) {    
-    .good-limited .price span::before,
-    .good-limited .price span::after {
-    font-size: 24px;
-    }
-    
+
     .mainSection h1 {
         margin-top: 143px;
         margin-bottom: 49px;
